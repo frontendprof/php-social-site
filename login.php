@@ -1,15 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="public/assets/images/favicon/instagram.ico" type="image/x-icon">
-	<link rel="stylesheet" href="public/css/register.css">
-	<title>Login || Instagram</title>
-</head>
-<body>
+<?php
 
-<section class="loginPage">
+	$title="Login + Instagram";
+	$keywords="Instagram, Share and capture worlds moments";
+	require "shared/header.php";
+
+	?>
+<section class="container">
 	<div class="row">
 		<div class="col-1">
 			<div class="heroImg"></div>
