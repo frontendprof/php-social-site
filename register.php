@@ -36,6 +36,8 @@
 		</main>
 	</section>
 
+	<script src="public/js/common.js"></script>
+
 </body>
 </html>
 	
