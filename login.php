@@ -31,6 +31,8 @@
 		</article>
 	</div>
 </section>
+
+	<script src="public/js/common.js"></script>
 	
 </body>
 </html>
