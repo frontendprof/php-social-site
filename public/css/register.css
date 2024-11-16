@@ -171,3 +171,13 @@ body{
 	font-weight: bold;
 	font-size: 1.7rem;
 }
+
+.form_errs{
+	font-size: 15px;
+	color:#e68183;
+	text-align: center;
+}
+
+.form_errs li{
+	padding:8px;
+}

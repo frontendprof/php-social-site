@@ -4,7 +4,11 @@
 require_once "core/init.php";
 
 if (Input::exists()) {
-	echo "Form submitted";
+	if (isset($_POST['submitBtn'])) {
+		$form_errors = array();
+		$req_flds = array("email", "full_name", "username", "password");
+		$form_errors = array_merge($form_errors, check_empty_flds($req_flds));
+	}
 }
 
 $title = "Register + Instagram";
@@ -19,6 +23,9 @@ require "shared/header.php";
 			<div class="heroImg"></div>
 		</div>
 		<article class="col-2">
+			<?php if (!empty($form_errors)) {
+				echo show_errors($form_errors);
+			} ?>
 			<form action="<?= h($_SERVER["PHP_SELF"]); ?>" method="POST" class="form">
 				<div class="siteLogo">
 					<img src="public/assets/images/logo/instagram.png" alt="instagram logo">
